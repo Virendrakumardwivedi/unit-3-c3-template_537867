@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <style>
+    #navbar{
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      background-color: aqua;
+      margin-bottom:5% ;
+
+    }
+    #form {
+     margin-left: 35%;
+    
+    }
+    #name{
+      padding-bottom: 3%;
+      margin-bottom: 3%;
+    }
+    #email{
+      padding-bottom: 3%;
+      margin-bottom: 3%;
+    }
+    #address{
+      padding-bottom: 3%;
+      margin-bottom: 3%;
+    }
+    #amount{
+      padding-bottom: 3%;
+      margin-bottom: 3%;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <h3>Sign Up</h3>
+      <a href="voucher.html">Purchase Voucher</a>
+    </div>
+    <!-- - name input box :- "name"
+  - email input box :- "email"
+  - Address input box :- "address"
+  - Amount input box :- "amount" 
+  - Submit button :- "submit"
+  - The user will be stored with key:- "user"
+  - The input fields should become empty after submitting -->
+<form id="form" onsubmit="users(event)">
+  <input placeholder="name" type="text" id="name"> <br>
+  <input placeholder="email" type="text" id="email"> <br>
+  <input placeholder="address" type="text" id="address"> <br>
+  <input placeholder="amount" type="number" id="amount"> <br>
+  <input type="submit">
+</form>
+ 
+  </body>
+</html>
+<script src="./scripts/main.js"></script>
